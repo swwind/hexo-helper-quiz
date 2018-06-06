@@ -5,7 +5,7 @@ const marked = (text) =>
   hexo.render.renderSync({text: text, engine: 'markdown'})
 
 hexo.extend.tag.register('quiz', (args, content) => {
-  const problems = content.split(/\n{2,}/g).map((prob) => {
+  const problems = content.trim().split(/\n{2,}/g).map((prob) => {
     const [title, opts] = prob.trim().split(/\n-{3,}\n/);
     const type = /^\[(?:x| )\]/i.test(opts) ? 'checkbox' : 'radio';
     const options = opts.trim().split('\n').map((item) => {
@@ -22,9 +22,9 @@ hexo.extend.tag.register('quiz', (args, content) => {
       options: options
     }
   })
-  const name = Math.random().toString().slice(2)
-    .split([]).map(x => "abcdefghij"[~~x]).join([]);
   const html = problems.map(({title, type, options}) => {
+    const name = Math.random().toString().slice(2)
+      .split([]).map(x => "abcdefghij"[~~x]).join([]);
     const opts = options.map(({choose, desc}) => {
       return `<label><input type="${type}" name="${name}" data-ans="${choose}">${desc}</label>`;
     }).join([]);

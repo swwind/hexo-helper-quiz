@@ -1,7 +1,7 @@
 {
   "name": "hexo-helper-quiz",
   "author": "swwind <swwind233@gmail.com>",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index",
   "repository": "https://github.com/swwind/hexo-helper-quiz",
   "license": "MIT",
