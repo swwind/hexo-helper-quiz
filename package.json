@@ -1,7 +1,7 @@
 {
   "name": "hexo-helper-quiz",
   "author": "swwind <swwind233@gmail.com>",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index",
   "repository": "https://github.com/swwind/hexo-helper-quiz",
   "license": "MIT",
@@ -16,5 +16,9 @@
     "stylus-loader": "^3.0.2",
     "webpack": "^4.11.0",
     "webpack-cli": "^3.0.2"
+  },
+  "dependencies": {
+    "hexo-fs": "^0.2.3",
+    "hexo-log": "^0.2.0"
   }
 }
