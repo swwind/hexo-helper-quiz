@@ -13,7 +13,7 @@ $ npm install hexo-helper-quiz
 ```markdown
 {% quiz A Funny Test %}
 
-<!-- Single choice questions -->
+<!-- Single choice question -->
 Which of the following characters I like **best**?
 --------------------------------------------------
 ( ) Izumi Sagiri (和泉 紗霧)
@@ -21,7 +21,7 @@ Which of the following characters I like **best**?
 (x) Zero Two (02)
 ( ) Takanashi Rikka (小鳥遊 六花)
 
-<!-- Multiple choice questions -->
+<!-- Multiple choice question -->
 Select all books written by _Fushimi Tsukasa_ (伏見 司).
 -------------------------------------------------------
 [x] Oreimo (俺の妹がこんなに可愛いわけがない)
@@ -36,8 +36,8 @@ Select all books written by _Fushimi Tsukasa_ (伏見 司).
 
 ## Feature
 
-- Friendly grammar.
-- Markdown is supporting.
+- Friendly grammar
+- Markdown is supported
 
 ## TODO
 
